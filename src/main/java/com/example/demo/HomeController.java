@@ -13,6 +13,8 @@ import java.util.ArrayList;
 public class HomeController{
     ArrayList<Guestbook> allGuestbook = new ArrayList<Guestbook>();
 
+
+
     @RequestMapping("/")
     public String loadGuestForm(Model model){
         model.addAttribute("guestbook", new Guestbook());
