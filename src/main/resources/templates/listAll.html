@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=”http://www.thymeleaf.org”>
+<head>
+    <meta charset="UTF-8">
+    <title>listAll</title>
+</head>
+<body>
+
+
+<div th:each="guestbook : ${allGuestbook}">
+    <p>
+        Name: [[${guestbook.name}]]<br>
+        Date: [[${guestbook.date}]]<br>
+        Wishes: [[${guestbook.wishes}]]<br>
+    </p>
+</div>
+</body>
+</html>

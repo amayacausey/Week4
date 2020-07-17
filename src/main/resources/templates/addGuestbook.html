@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=”http://www.thymeleaf.org”>
+<head>
+    <meta charset="UTF-8">
+    <title>addGuestbook</title>
+
+</head>
+<body>
+<h2>Add Guestbook</h2>
+<form th:action="@{confirmGuestbook}" th:object="${guestbook}" method="post">
+    Name: <input type="text" th:field="*{name}"><br>
+    Date: <input type="text" th:field="*{date}"><br>
+    Wishes: <input type="text" th:field="*{wishes}"><br>
+    <input type="submit" value="Add Guestbook">
+
+
+</form>
+
+</body>
+</html>
