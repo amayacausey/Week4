@@ -4,6 +4,7 @@ package com.example.demo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -20,7 +21,6 @@ public class HomeController{
         model.addAttribute("guestbook", new Guestbook());
         return "addGuestbook";
     }
-
     @PostMapping("/confirmGuestbook")
     public String confirmGuestbook(@ModelAttribute Guestbook guestbook,Model model)
     {
@@ -35,4 +35,5 @@ public class HomeController{
         return "listAll";
     }
 
-}
+
+        }
